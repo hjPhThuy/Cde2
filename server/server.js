@@ -4,7 +4,6 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./configs/db.js').default; // nếu db.js dùng export default
 const { clerkMiddleware } = require('@clerk/express');
-const clerkWebhooks = require('./controllers/clerkWebhooks.js');
 
 const app = express();
 
@@ -29,7 +28,7 @@ app.use(async (req, res, next) => {
 });
 
 // Routes
-app.use('/api/clerk', clerkWebhooks);
+
 
 app.get('/', (req, res) => {
   res.send('API đang hoạt động');
