@@ -1,22 +1,34 @@
-import express from 'express'
-import "dotenv/config";
-import cors from "cors";
+// server.js
+import express from 'express';
+import 'dotenv/config';
+import cors from 'cors';
 import connectDB from './configs/db.js';
-import { clerkMiddleware } from '@clerk/express'
+import { clerkMiddleware } from '@clerk/express';
 import clerkWebhooks from './controllers/clerkWebhooks.js';
-connectDB()
 
-const app = express()
-app.use(cors()) 
+// Khởi tạo app
+const app = express();
 
-app.use(express.json())
-app.use(clerkMiddleware())
+// Middleware
+app.use(cors());
+app.use(express.json());
+app.use(clerkMiddleware());
 
-app.use("/api/clerk", clerkWebhooks);
+// Routes
+app.use('/api/clerk', clerkWebhooks);
 
-app.get('/', (req, res) => res.send("API đang hoạt động"))
+app.get('/', (req, res) => {
+  res.send('API đang hoạt động');
+});
 
-const PORT = process.env.PORT || 3000;
+// === CHỈ XUẤT APP - KHÔNG DÙNG app.listen() ===
+export default app;
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+// === KẾT NỐI DB KHI VERCEL GỌI FUNCTION ===
+app.use(async (req, res, next) => {
+  if (!global.dbConnected) {
+    await connectDB();
+    global.dbConnected = true;
+  }
+  next();
+});
