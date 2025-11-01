@@ -1,38 +1,29 @@
 // server.js
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const connectDB = require('./configs/db.js').default; // nếu db.js dùng export default
-const { clerkMiddleware } = require('@clerk/express');
+import dotenv from "dotenv";
+import express from "express";
+import cors from "cors";
+import connectDB from "./configs/db.js";
+import { clerkMiddleware } from "@clerk/express";
 
+dotenv.config();
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(clerkMiddleware());
 
-// Kết nối DB chỉ 1 lần
-let dbConnected = false;
-app.use(async (req, res, next) => {
-  if (!dbConnected) {
-    try {
-      await connectDB();
-      dbConnected = true;
-      console.log('Kết nối database thành công');
-    } catch (err) {
-      console.error('DB Error:', err);
-    }
-  }
-  next();
+// Gọi kết nối DB
+await connectDB();
+
+// Route test
+app.get("/", (req, res) => {
+  res.send("API đang hoạt động 🚀");
 });
 
-// Routes
+// Khi chạy local -> listen; khi deploy vercel -> export
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+}
 
-
-app.get('/', (req, res) => {
-  res.send('API đang hoạt động');
-});
-
-// XUẤT CHO VERCEL
-module.exports = app;
+export default app;
