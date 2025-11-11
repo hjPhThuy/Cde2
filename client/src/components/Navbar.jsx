@@ -9,10 +9,10 @@ const BookIcon = ()=>(<svg className="w-4 h-4 text-gray-700" aria-hidden="true" 
 
 const Navbar = () => {
     const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Hotels', path: '/room' },
-        { name: 'Experience', path: '/' },
-        { name: 'About', path: '/' },
+        { name: 'Trang chủ', path: '/' },
+        { name: 'Khách sạn', path: '/room' },
+        { name: 'Hoạt động', path: '/' },
+        { name: 'Về chúng tôi', path: '/' },
     ];
 
     
@@ -75,7 +75,7 @@ const Navbar = () => {
                     </UserButton>)
                     :
                     (<button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
-                        Login
+                        Đăng nhập
                     </button>)
                     }
                 
@@ -113,7 +113,7 @@ const Navbar = () => {
                     </button>}
 
                     {!User && <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
-                        Login
+                        Đăng nhập
                     </button>}
                 </div>
             </nav>

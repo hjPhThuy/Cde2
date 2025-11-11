@@ -6,9 +6,9 @@ const ExclusiveOffers = () => {
     return(
         <div className=' flex flex-col items-center px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-30'>
             <div className='flex flex-col md:flex-row items-center justify-between w-full'>
-             <Title align='left' title='Exclusive Offers' subTitle='Take advantage of our limited-time offers and special packages to enhance your stay and create unforgettable memories.'/>
+             <Title align='left' title='ƯU ĐÃI & GÓI NGHỈ DƯỠNG ĐẶC BIỆT' subTitle='Tận dụng các chương trình ưu đãi có giới hạn thời gian và gói dịch vụ đặc biệt của chúng tôi để nâng tầm chuyến đi và tạo nên những kỷ niệm khó quên.'/>
              <button className='group flex items-center gap-2 font-medium cursor-pointer max-md:mt-12'>
-                View All Offer
+            Xem Tất Cả Ưu Đãi
              <img src={assets.arrowIcon} alt="arrow-icon" className='group-hover:translate-x-1 transition-all'/>
 
              </button>
@@ -22,10 +22,10 @@ const ExclusiveOffers = () => {
                         <div>
                             <p className='text-2xl font-medium font-playfair'>{item.title}</p>
                             <p>{item.description}</p>
-                            <p className='text-xs text-white/70 mt-3'>Expires {item.expiryDate}</p>
+                            <p className='text-xs text-white/70 mt-3'>Hết hạn {item.expiryDate}</p>
                         </div>
                         <button className='flex items-center gap-2 font-medium cursor-pointer mt-4 mb-5'>
-                            View offers
+                           Xem chi tiết ưu đãi
                             <img className='invert group-hover:translate-x-1 transition-all' src={assets.arrowIcon} alt="arrow-icon"/>
                         </button>
 

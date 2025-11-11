@@ -83,16 +83,16 @@ export const cities = [
 
 // Exclusive Offers Dummy Data
 export const exclusiveOffers = [
-    { _id: 1, title: "Summer Escape Package", description: "Enjoy a complimentary night and daily breakfast", priceOff: 25, expiryDate: "Aug 31", image: exclusiveOfferCardImg1 },
-    { _id: 2, title: "Romantic Getaway", description: "Special couples package including spa treatment", priceOff: 20, expiryDate: "Sep 20", image: exclusiveOfferCardImg2 },
-    { _id: 3, title: "Luxury Retreat", description: "Book 60 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
+    { _id: 1, title: "Gói Hè Rực Rỡ", description: "Tận hưởng miễn phí một đêm nghỉ và bữa sáng hàng ngày khi đặt gói trọn gói này.", priceOff: 25, expiryDate: "31/09/2025", image: exclusiveOfferCardImg1 },
+    { _id: 2, title: "Kỳ Nghỉ Lãng Mạn", description: "Gói đặc biệt dành cho các cặp đôi, bao gồm dịch vụ Spa thư giãn cao cấp", priceOff: 20, expiryDate: "30/07/2025", image: exclusiveOfferCardImg2 },
+    { _id: 3, title: "Nghỉ Dưỡng Sang Trọng", description: "Đặt phòng trước 60 ngày để tiết kiệm lớn tại bất kỳ khu nghỉ dưỡng cao cấp nào của chúng tôi.", priceOff: 30, expiryDate: "01/10/2025", image: exclusiveOfferCardImg3 },
 ]
 
 // Testimonials Dummy Data
 export const testimonials = [
-    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay provides." },
-    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "QuickStay exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!" },
-    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best luxury accommodations through QuickStay. Their recommendations never disappoint!" }
+    { id: 1, name: "Nguyễn Đức Duy", address: "Tp Hồ Chí Minh", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review:"Tìm được một khách sạn ưng ý ở Đà Lạt cho chuyến đi gia đình chưa bao giờ dễ dàng đến thế! Giao diện QuickStay rất thân thiện, thông tin rõ ràng và tôi đã có một kỳ nghỉ tuyệt vời với mức giá rất hợp lý." },
+    { id: 2, name: "Đàm Quốc Khánh", address: "Đà Nẵng", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "QuickStay vượt ngoài mong đợi của tôi. Quy trình đặt phòng diễn ra cực kỳ suôn sẻ, và các khách sạn đều là hàng đầu. Rất nên dùng!" },
+    { id: 3, name: "Lâm Nguyễn Phương Thùy", address: "Đồng Nai", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Thường xuyên du lịch cuối tuần, tôi rất cần một nền tảng tìm kiếm nhanh. QuickStay cung cấp thông tin chi tiết và ảnh chụp thực tế rất rõ ràng, giúp tôi yên tâm chọn được resort ưng ý ở Phan Thiết. Quy trình thanh toán cũng cực kỳ tiện lợi!" }
 ];
 
 // Facility Icon
@@ -130,11 +130,11 @@ export const userDummyData = {
 // Hotel Dummy Data
 export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Urbanza Suites",
-    "address": "Main Road  123 Street , 23 Colony",
+    "name": "Phú Quốc Ocean View",
+    "address": "Đường Trần Hưng Đạo, Dương Đông, Phú Quốc",
     "contact": "+0123456789",
     "owner": userDummyData,
-    "city": "New York",
+    "city": "Kiên Giang",
     "createdAt": "2025-04-10T06:22:11.663Z",
     "updatedAt": "2025-04-10T06:22:11.663Z",
     "__v": 0
