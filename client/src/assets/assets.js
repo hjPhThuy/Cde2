@@ -130,7 +130,7 @@ export const userDummyData = {
 // Hotel Dummy Data
 export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Phú Quốc Ocean View",
+    "name": "Nha Trang Ocean View",
     "address": "Đường Trần Hưng Đạo, Dương Đông, Phú Quốc",
     "contact": "+0123456789",
     "owner": userDummyData,
