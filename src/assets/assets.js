@@ -97,11 +97,11 @@ export const testimonials = [
 
 // Facility Icon
 export const facilityIcons = {
-    "Free WiFi": assets.freeWifiIcon,
-    "Free Breakfast": assets.freeBreakfastIcon,
-    "Room Service": assets.roomServiceIcon,
-    "Mountain View": assets.mountainIcon,
-    "Pool Access": assets.poolIcon,
+    "Wifi miễn phí": assets.freeWifiIcon,
+    "Bữa sáng": assets.freeBreakfastIcon,
+    "Phục vụ": assets.roomServiceIcon,
+    "View núi": assets.mountainIcon,
+    "Hồ bơi": assets.poolIcon,
 };
 
 // For Room Details Page
@@ -147,7 +147,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Phục vụ", "View núi", "Hồ bơi"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
@@ -159,7 +159,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Phục vụ", "View núi", "Hồ bơi"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
@@ -171,7 +171,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 249,
-        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
+        "amenities": ["Wifi miễn phí", "Bữa sáng", "Phục vụ"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:24:06.285Z",
@@ -183,7 +183,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
         "pricePerNight": 199,
-        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
+        "amenities": ["Wifi miễn phí", "Phục vụ", "Hồ bơi"],
         "images": [roomImg4, roomImg1, roomImg2, roomImg3],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:23:20.252Z",
