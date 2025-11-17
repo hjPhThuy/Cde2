@@ -75,10 +75,10 @@ export const assets = {
 }
 
 export const cities = [
-    "Phú Quốc",
-    "Hồ Chí Minh",
-    "Huế",
-    "Đà Nẵng",
+    "Dubai",
+    "Singapore",
+    "New York",
+    "London",
 ];
 
 // Exclusive Offers Dummy Data
@@ -97,19 +97,19 @@ export const testimonials = [
 
 // Facility Icon
 export const facilityIcons = {
-    "Miễn phí WiFi": assets.freeWifiIcon,
-    "Miễn phí bữa sáng": assets.freeBreakfastIcon,
-    "Dịch vụ phòng": assets.roomServiceIcon,
-    "Khung cảnh đẹp": assets.mountainIcon,
+    "Wifi miễn phí": assets.freeWifiIcon,
+    "Bữa sáng": assets.freeBreakfastIcon,
+    "Phục vụ": assets.roomServiceIcon,
+    "View núi": assets.mountainIcon,
     "Hồ bơi": assets.poolIcon,
 };
 
 // For Room Details Page
 export const roomCommonData = [
-   { icon: assets.homeIcon, title: "Nơi ở Sạch & An Toàn", description: "Không gian được duy trì tốt và vệ sinh chỉ dành cho bạn." },
-   { icon: assets.badgeIcon, title: "Vệ Sinh Nâng Cao", description: "Chủ nhà này tuân thủ các tiêu chuẩn vệ sinh nghiêm ngặt của Staybnb." },
-   { icon: assets.locationFilledIcon, title: "Vị Trí Tuyệt Vời", description: "90% khách đánh giá vị trí 5 sao." },
-   { icon: assets.heartIcon, title: "Nhận Phòng Thuận Tiện", description: "100% khách đánh giá nhận phòng 5 sao." },
+    { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
+    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
+    { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
+    { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
 ];
 
 // User Dummy Data
@@ -128,10 +128,9 @@ export const userDummyData = {
 }
 
 // Hotel Dummy Data
-export const hotelDummyData =  
-    {
+export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Phú Quốc Ocean View",
+    "name": "Nha Trang Ocean View",
     "address": "Đường Trần Hưng Đạo, Dương Đông, Phú Quốc",
     "contact": "+0123456789",
     "owner": userDummyData,
@@ -141,8 +140,6 @@ export const hotelDummyData =
     "__v": 0
 }
 
-
-
 // Rooms Dummy Data
 export const roomsDummyData = [
     {
@@ -150,7 +147,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Phục vụ", "View núi", "Hồ bơi"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
@@ -162,7 +159,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Phục vụ", "View núi", "Hồ bơi"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
@@ -174,7 +171,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 249,
-        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
+        "amenities": ["Wifi miễn phí", "Bữa sáng", "Phục vụ"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:24:06.285Z",
@@ -186,7 +183,7 @@ export const roomsDummyData = [
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
         "pricePerNight": 199,
-        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
+        "amenities": ["Wifi miễn phí", "Phục vụ", "Hồ bơi"],
         "images": [roomImg4, roomImg1, roomImg2, roomImg3],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:23:20.252Z",
